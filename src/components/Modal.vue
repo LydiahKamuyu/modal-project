@@ -1,37 +1,32 @@
 <template>
     <div class="backdrop">
         <div class="model">
+            <h1> Modal title</h1>
             <p>modal content</p>
+            
         </div>
     </div>
 </template>
 
-<style>
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+<style scoped>
 .modal {
-  background: white;
-  width: 400px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
+    width: 400px;
+    padding: 20px;
+    margin: 100px auto;
+    background: white;
+    border-radius: 10px;
 
-.modal p {
-  font-size: 18px;
-  margin-bottom: 20px;
 }
-
-/* Add any additional styles or customizations here */
+.backdrop {
+    top: 0;
+    position: fixed-top;
+    background:rgba(5, 160, 244, 0.5);
+    width: 100%;
+    height: 100%;
+}
+h1 {
+  color: #f9118d;
+  border: none;
+  padding: 0;
+}
 </style>
