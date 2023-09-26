@@ -1,7 +1,7 @@
 <template>
     <div class="backdrop">
         <div class="model">
-            <h1> Modal title</h1>
+            <h1> {{ header }}</h1>
             <p>modal content</p>
             
         </div>
