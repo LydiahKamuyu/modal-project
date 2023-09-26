@@ -7,8 +7,13 @@
         </div>
     </div>
 </template>
+<script>
 
-<style>
+export default {
+    props:['header']
+}
+</script>
+<style scoped>
 .modal {
     width: 400px;
     padding: 20px;
@@ -18,13 +23,13 @@
 
 }
 .backdrop {
-    top: 0;
+    top: 1;
     position: fixed-top;
     background:rgba(5, 160, 244, 0.5);
     width: 100%;
     height: 100%;
 }
-.modal h1 {
+h1 {
   color: #03cfb4;
   border: none;
   padding: 0;
