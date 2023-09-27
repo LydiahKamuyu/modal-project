@@ -3,8 +3,12 @@
   <p> Welcome...</p>
   <div v-if="showModal">
     <Modal theme="sale" @close="toggleModal">
-      <h1>Ninja Giveaways</h1>
-      <p>Grab your ninja swag for</p>
+      <template v-slot:links>
+       <a href="#"> Sign up now</a>
+       <a href="#"> More info</a>
+      </template>
+      <h1>{{ header }}</h1>
+      <p>{{ text }}</p>
     
     </Modal>
   </div>
