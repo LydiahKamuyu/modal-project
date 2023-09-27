@@ -7,12 +7,21 @@
        <a href="#"> Sign up now</a>
        <a href="#"> More info</a>
       </template>
-      <h1>{{ header }}</h1>
-      <p>{{ text }}</p>
-    
+      <h1> Sign Up for GiveAways </h1>
+      <p> Must be Nice </p>
     </Modal>
   </div>
+
+  <div v-if="showModalTwo">
+    <Modal theme="" @close="toggleModalTwo">
+
+      <h1> Sign Up to our news letter </h1>
+      <p> For Updates and promo codes </p>
+    </Modal>
+  </div>
+
  <button @click="toggleModal"> open modal </button>
+ <button @click="toggleModalTwo"> open modalTwo</button>
 </template>
 
 <script>
@@ -25,14 +34,16 @@ export default {
   data() {
     return {
       title: 'My first Vue.js!',
-      header: 'Sign up for giveaways',
-      text: 'Must be nice',
-      showModal: false
+      showModal: false,
+      showModalTwo: false,
     }
   },
   methods: {
     toggleModal() {
       this.showModal = !this.showModal;
+    },
+    toggleModalTwo() {
+      this.showModalTwo = !this.showModalTwo;
     },
   }
 
