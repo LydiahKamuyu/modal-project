@@ -1,6 +1,9 @@
 <template>
   <h1>{{ title }}</h1>
-  <Modal :header="header" :text="text" theme="sale"/>
+  <div v-if="showModal">
+    <Modal :header="header" :text="text" theme="sale"/>
+  </div>
+ 
 </template>
 
 <script>
@@ -14,7 +17,8 @@ export default {
     return {
       title: 'Hello Vue.js!',
       header: 'Sign up for giveaways',
-      text: 'Must be nice'
+      text: 'Must be nice',
+      showModal: false
     }
   }
 
