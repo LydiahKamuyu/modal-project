@@ -2,9 +2,13 @@
   <h1>{{ title }}</h1>
   <p> Welcome...</p>
   <div v-if="showModal">
-    <Modal :header="header" :text="text" theme="sale" @close="toggleModal"/>
+    <Modal theme="sale" @close="toggleModal">
+      <h1>Ninja Giveaways</h1>
+      <p>Grab your ninja swag for</p>
+    
+    </Modal>
   </div>
- <button @click.alt="toggleModal"> open modal </button>
+ <button @click="toggleModal"> open modal </button>
 </template>
 
 <script>
@@ -19,13 +23,13 @@ export default {
       title: 'My first Vue.js!',
       header: 'Sign up for giveaways',
       text: 'Must be nice',
-      showModal: false,
+      showModal: false
     }
   },
   methods: {
     toggleModal() {
-      this.showModal =!this.showModal
-    }
+      this.showModal = !this.showModal;
+    },
   }
 
 }
