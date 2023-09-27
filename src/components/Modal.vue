@@ -47,4 +47,18 @@ h1 {
 .modal.sale h1 {
     color: white;
 }
+.model.actions {
+    text-align: center;
+    margin: 30px 0 10px 0;
+}
+.modal .actions a {
+    color: 333;
+    padding: 8px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 10px;
+
+
+}
 </style>
